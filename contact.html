@@ -42,7 +42,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <div class="animsition-overlay">
@@ -116,23 +115,22 @@
             </div>
           </div>
           <form action="" id="slickform" method="POST">
-           <fieldset>
-             <label><span>*</span>Name</label>
-             <input id="name" name="name" type="text" value="">
-             <br />
-             <label><span>*</span>Phone</label>
-             <input id="phone" name="phone" type="text" value="">
-             <br />
-             <label><span>*</span>Email</label>
-             <input id="email" name="email" type="text" value="">
-             <br />
-             <label><span>*</span>Comment</label>
-             <textarea name="comment" id="comment" cols="5" rows="5" class="largertextarea"></textarea>
-             <br /><div class="g-recaptcha" data-sitekey="6LfJpEUUAAAAAEXJkWi6wagLMC7uHzf_N76M4OGl"></div>
-             <input name="submit" type="submit" value="Contact Us" class="slickbutton">
-           </fieldset>
-           
-         </form>
+            <fieldset>
+              <label><span>*</span>Name</label>
+              <input id="name" name="name" type="text" value="">
+              <br />
+              <label><span>*</span>Phone</label>
+              <input id="phone" name="phone" type="text" value="">
+              <br />
+              <label><span>*</span>Email</label>
+              <input id="email" name="email" type="text" value="">
+              <br />
+              <label><span>*</span>Comment</label>
+              <textarea name="comment" id="comment" cols="5" rows="5" class="largertextarea"></textarea>
+              <br /><div class="g-recaptcha" data-sitekey="6LfJpEUUAAAAAEXJkWi6wagLMC7uHzf_N76M4OGl"></div>
+              <input name="submit" type="submit" value="Contact Us" class="slickbutton">
+            </fieldset>
+          </form>
         </div>
       </div>
       <!-- END col_6 -->
@@ -168,6 +166,10 @@
 </div>
 <!-- END .animsition-overlaj -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/animsition.min.js"></script>
 
 <script src="js/functions.js"></script>
 <script type="text/javascript">
