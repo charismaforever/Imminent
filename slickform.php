@@ -4,7 +4,7 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
         //your site secret key
         $secret = '6LfJpEUUAAAAAPK1wXERjGmPy13SIch4hzpiN1U1';
         //get verify response data
-        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+        $verifyResponse = file_get_contents('http://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
         $responseData = json_decode($verifyResponse);
         if($responseData->success):
             //contact form submission code
