@@ -531,7 +531,7 @@ strong {
   height: 100vh;
   width: 100%;
   background-color: #1F2535;
-  background: url(../img/CityFlair.png) no-repeat center center fixed;
+  background: url(https://res.cloudinary.com/dyqlkc3ri/image/upload/c_scale,w_1920/v1518307127/CityFlair_slek9s.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -552,7 +552,7 @@ section {
   min-height: 100vh;
   width: 100%;
   background-color: #141C31;
-  background: url(../images/classConvert.png);
+  background: url(https://res.cloudinary.com/dyqlkc3ri/image/upload/c_scale,w_1920/v1518306997/classConvert_f3iy2m.png);
 }
 
 #section-4 {
@@ -2071,7 +2071,7 @@ ul.blogsocico li.youtube a:hover, #sidebar ul.blogsocico li.youtube a:hover {
 @media all and (max-width: 768px) {
 
   .hero {
-    background-image: url(../img/CityFlair2.png);
+    background-image: url(https://res.cloudinary.com/dyqlkc3ri/image/upload/c_scale,w_768/v1518307034/CityFlair_2_w6uy20.png);
   }
 
   .absomid {
