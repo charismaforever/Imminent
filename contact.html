@@ -42,7 +42,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <div class="animsition-overlay">
@@ -115,15 +114,22 @@
               <div class="slickerror"></div>
             </div>
           </div>
-          <form action="mail.php" method="post" enctype="multipart/form-data">
-	<input name="sender_name" placeholder="Your Name..."/>
-	<input name="sender_email" placeholder="Your email..."/>
-	<textarea placeholder="Your Message..." name="sender_message">
-        <div class="captcha_wrapper">
-		<div class="g-recaptcha" data-sitekey="YOUR_KEY"></div>
-	</div>
-	<button type="submit" id="send_message">Contact Us!</button>
-</form>
+          <form action="" id="slickform" method="POST">
+            <fieldset>
+              <label><span>*</span>Name</label>
+              <input id="name" name="name" type="text" value="">
+              <br />
+              <label><span>*</span>Phone</label>
+              <input id="phone" name="phone" type="text" value="">
+              <br />
+              <label><span>*</span>Email</label>
+              <input id="email" name="email" type="text" value="">
+              <br />
+              <label><span>*</span>Comment</label>
+              <textarea name="comment" id="comment" cols="5" rows="5" class="largertextarea"></textarea>
+              <br />
+              <input name="submit" type="submit" value="Contact Us" class="slickbutton">
+              <div class="g-recaptcha" data-sitekey="6LfJpEUUAAAAAEXJkWi6wagLMC7uHzf_N76M4OGl"></div>
             </fieldset>
           </form>
         </div>
