@@ -544,27 +544,7 @@
         gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
       }
     </script>
-<script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
-    <noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
-  
-    <script id="list-hover-fs" type="x-shader/x-fragment">
-      uniform sampler2D uTexture;
-      uniform float uAlpha;
-      uniform float uScale;
 
-      varying vec2 vUv;
-
-      vec2 scaleUV(vec2 uv,float scale) {
-        float center = 0.5;
-        return ((uv - center) * scale) + center;
-      }
-
-      void main() {
-        vec3 color = texture2D(uTexture,scaleUV(vUv,uScale)).rgb;
-        gl_FragColor = vec4(color,uAlpha);
-      }
-
-    </script>
     <!-- - List Hover Shaders -->
     <!-- Slider Textures Shaders -->
     <script id="slider-textures-vs" type="x-shader/x-vertex">
